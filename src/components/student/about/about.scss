@@ -1,0 +1,95 @@
+.about-component {
+    margin-top: 4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0 5%;
+
+    .mobileApps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding: 1px;
+        box-sizing: border-box;
+        margin: 3rem 0;
+
+        .app1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .app2 {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $breakpoint-tablet - 200) {
+            flex-direction: row;
+            text-align: start;
+
+            .app1 {
+                width: 45%;
+                .article {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            .app2 {
+                width: 55%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .oddApp {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding: 1px;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: $breakpoint-tablet - 200) {
+            flex-direction: row;
+            text-align: start;
+
+            .app2 {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .article {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            .app1 {
+                width: 55%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 10px;
+
+        span {
+            border-bottom: 3px solid $primary-theme;
+        }
+    }
+
+    img {
+        height: 40vh;
+        width: auto;
+        @media screen and (min-width: $breakpoint-tablet - 200){
+            height:60vh;
+            width:80%;
+        }
+    }
+}

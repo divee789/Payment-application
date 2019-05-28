@@ -1,0 +1,12 @@
+$primary-theme: #dd1173;
+$secondary-theme:#350e47;
+
+//media-queries
+$breakpoint-mobile:320px;
+$breakpoint-tablet:768px;
+$breakpoint-laptop:1200px;
+
+
+@import "./basics/buttons.scss";
+@import "./basics/fonts.scss"
+

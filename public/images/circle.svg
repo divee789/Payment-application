@@ -1,0 +1,7 @@
+    <svg id="green">
+    <linearGradient>
+     <stop class="main-stop" offset="0%" />
+    <stop class="alt-stop" offset="100%" />
+    </linearGradient>
+    <circle x="5" cx="155" cy="155" r="150"  fill="url(#gradient)" />
+</svg>
